@@ -14,7 +14,8 @@
         </div></li>
 
       <li><a  routerLink="/contact-us"><i class="fa-solid fa-phone"></i>Contact</a></li>
-      <li><a routerLink="/login"><i class="fa-solid fa-right-from-bracket"></i>Login</a></li>
+      <li><a routerLink="/login" *ngIf="!userlogin"><i class="fa-solid fa-right-from-bracket"></i>Login</a></li>
+      <li style="margin-right: 100px;"><a *ngIf="userlogin" (click)="logout()"><i class="fa-solid fa-right-from-bracket"></i>Logut</a></li>
 
     </ul>
   </nav>

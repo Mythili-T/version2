@@ -15,11 +15,12 @@ export class LoginpageComponent implements OnInit {
   username:any="";
   password:any="";
   retUrl:any="";
-
+  
   constructor(private fb:FormBuilder,private http:HttpClient,private login:RegisterService,private route:Router,
     private logservice:GuardService,private router:ActivatedRoute) { }
 
   ngOnInit() {
+
   }
   loggedIn(){
     this.logservice. userloggedin(this.username,this.password);
@@ -37,6 +38,7 @@ submitLoginForm(){
     const user=res.find((a:any)=>a.namevalue===this.loginForm.value.namevalue && a.passwordvalue===this.loginForm.value.passwordvalue);
     if(user){
       alert("Login successfully");
+      sessionStorage.setItem('UserLogin','true');
       this.route.navigate(['/home'])
     }
     else{

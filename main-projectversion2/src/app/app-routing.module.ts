@@ -92,10 +92,7 @@ const routes: Routes = [
     path: "home",
     component: HomepageComponent
   },
-  {
-    path: "",
-    component: HomepageComponent
-  },
+
   {
     path: "login",
     component: LoginpageComponent
@@ -425,7 +422,11 @@ const routes: Routes = [
 {
   path:"ITfinalsybl",
   component:ITfinalsyblComponent
-}
+},
+{
+  path: "",
+  component: HomepageComponent
+},
 
 
 ];
