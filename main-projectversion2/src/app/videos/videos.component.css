@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+/* .body-content{
+    background-image: url('https://images.unsplash.com/photo-1624254009481-94fb3b9cf16e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1146&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 665px;
+} */
+
+.body-content .imagess {
+  height: 89.5vh;
+  width: 97.9vw;
+}
+
+.body-content .imagess img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+body {
+  font-family: sans-serif;
+}
+/* <!-- menu-bar starts --> */
+.menu-bar {
+  background-color: #503730;
+  text-align: center;
+  /* width: 120%; */
+}
+
+.menu-bar ul {
+  display: inline-flex;
+  list-style: none;
+  color: #fff;
+}
+
+.menu-bar ul li {
+  width: 120px;
+  margin: 15px;
+  padding: 15px;
+}
+
+.menu-bar ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.current-page,
+.menu-bar ul li:hover {
+  background: #dc9e8f52;
+  border-radius: 3px;
+}
+
+.menu-bar .fa-solid {
+  margin-right: 6px;
+}
+
+
+.dropdown-menu1 {
+  display: none;
+}
+
+.menu-bar ul li:hover .dropdown-menu1 {
+  display: block;
+  position: absolute;
+  background-color:#503730;
+  margin-top: 16px;
+  margin-left: -15px;
+}
+
+.menu-bar ul li:hover .dropdown-menu1 ul {
+  display: block;
+  margin: 10px;
+}
+
+.menu-bar ul li:hover .dropdown-menu1 ul li {
+  width: 130px;
+  padding: 10px;
+  border-bottom: 1px dotted #fff;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+}
+
+.menu-bar ul li:hover .dropdown-menu1 ul li:last-child {
+  border-bottom: none;
+}
+
+.menu-bar ul li:hover .dropdown-menu1 ul li a:hover {
+  color: #c6bbb8;
+}
+
+.fa-angle-right {
+  float: right;
+  font-size: 12.5px;
+  padding-top: 5px;
+}
+
+
+
+
+
+.images img {
+  width: 45%;
+  height: 250px;
+  border-radius: 10px;
+  margin-left: 150px;
+}
+
+
+.current-year {
+  text-align: center;
+}
+.department h1{
+  color: #bb5458;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 35px;
+  margin-top: 25px;
+  margin-left: 500px;
+}
+.department h2{
+  color: #5b3d3e;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 28px;
+  margin-top: 25px;
+  margin-left: 700px;
+}
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.sub-grid2 .subject-title {
+  color: #bb5458;
+  font-size: 25px;
+}
+.sub-grid2 {
+  margin-top: 20px;
+}
+.link a{
+  text-decoration: none;
+  font-size: 20px;
+  color: #6d5252;
+}
+.link a:hover{
+  color: rgb(90, 19, 21);
+  text-decoration: underline;
+}

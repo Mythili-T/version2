@@ -1,0 +1,26 @@
+<h1>Pipe-works</h1>
+<h2>I.inbuilt  pipes</h2>
+<h3>1. String</h3>
+<p>{{'Mythili'|uppercase}}</p>
+<p>{{'MYTHILI'|lowercase}}</p>
+<p>{{'mythilI'|titlecase}}</p>
+
+<h3>2. Decimal</h3>
+<p>{{936086.5816|number:'10.0-3'}}</p>
+
+<h3>3. Currency</h3>
+<p>{{98420|currency:'INR':false}}</p>
+
+<h3> 4. Date</h3>
+{{ todayDate|date:' dd/MMM/yy hh:mm:ss'}}
+
+<h3>5. Object</h3>
+<p>{{'empname'|json}}</p>
+
+<h3>6. Arrays and Strings </h3>
+<p>{{'welcome to my Smms'}}</p>
+<p>{{'welcome to my Smms'|slice:3}}</p>
+<p>{{'welcome to my Smms'|slice:5:7}}</p>
+<p>{{'welcome to my Smms'|slice:3:-7}}</p>
+
+

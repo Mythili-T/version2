@@ -1,0 +1,20 @@
+.div{
+margin-top: 200px;
+  margin-left: 550px;
+}
+.div label{
+  color: blue;
+  font-style: normal;
+  font-size: 30px;
+}
+.div input{
+  width: 200px;
+  height: 30px;
+  margin-left: 30px;
+}
+button{
+  margin-left: 200px;
+  font-size: 20px;
+  margin-top: 10px;
+  color: blue;
+}

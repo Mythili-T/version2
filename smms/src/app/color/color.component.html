@@ -1,0 +1,25 @@
+<!-- <p id="para">color works!</p> -->
+<div>
+  <h4>Kindly select Your Fav Car:</h4>
+  <select [(ngModel)]="car">
+    <option value="blue">Cullinan</option>
+    <option value="violet">Wraith</option>
+    <option value="red">Audi</option>
+    <option value="purple">Phantom</option>
+    <option value="please select the Fav Car" selected>Kindly select the car</option>
+  </select>
+  </div>
+
+  <ul [ngStyle]="{'color':car}"   [ngSwitch]="car">
+    <li *ngSwitchCase="'blue'">For Cullinan- {{car}} color tag</li>
+    <li *ngSwitchCase="'violet'">For Wraith- {{car}} color tag</li>
+    <li *ngSwitchCase="'red'">For Audi- {{car}} color tag</li>
+    <li *ngSwitchCase="'purple'">For Phantom- {{car}} color tag</li>
+    <li *ngSwitchDefault="">For others- {{car}} for color tag</li>
+  </ul>
+
+  <h1 [ngClass]="{c1:status}">Welcome to My car website</h1>
+
+  <button  (click)="toggleCase()">change</button>
+
+  <h1 id="custom">My project is car website</h1>

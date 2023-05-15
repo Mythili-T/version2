@@ -1,0 +1,13 @@
+#para{
+  color: red;
+ align-items: center;
+  font-size: 30px;
+}
+.c1{
+  color: rgb(32, 69, 141);
+}
+#custom:hover{
+  color: rgb(25, 136, 148);
+  transform: scaleX(.5);
+  cursor: pointer;
+}

@@ -1,0 +1,67 @@
+{
+  "registeruser": [
+    {
+      "namevalue": "Mythili T",
+      "registernovalue": "1913057",
+      "emailvalue": "myth@gmail.com",
+      "mobilevalue": "9360865812",
+      "passwordvalue": "Myth@123",
+      "confirmpasswordvalue": "Myth@123",
+      "id": 1
+    },
+    {
+      "namevalue": "yaazhini p",
+      "registernovalue": 1913101,
+      "emailvalue": "yaazhini@gmail.com",
+      "mobilevalue": "9876543211",
+      "passwordvalue": "Yaazhini@123",
+      "confirmpasswordvalue": "Yaazhini@123",
+      "department": "CSE",
+      "year": "4",
+      "id": 2
+    },
+    {
+      "namevalue": null,
+      "registernovalue": 1913101,
+      "emailvalue": null,
+      "mobilevalue": null,
+      "passwordvalue": null,
+      "confirmpasswordvalue": null,
+      "department": "select department",
+      "year": "select Year ",
+      "id": 3
+    },
+    {
+      "namevalue": "Yavanika V",
+      "emailvalue": "yavanika28@gmail.com",
+      "mobilevalue": "9876543212",
+      "passwordvalue": "Yavani@1",
+      "confirmpasswordvalue": "Yavani@1",
+      "department": "CSE",
+      "year": "4",
+      "id": 4
+    },
+    {
+      "namevalue": "Sri Hari V",
+      "registernovalue": "1913089",
+      "emailvalue": "sriharihd753@gmail.com",
+      "mobilevalue": "7548843968",
+      "passwordvalue": "Srihari@10",
+      "confirmpasswordvalue": "Srihari@10",
+      "department": "CSE",
+      "year": "4",
+      "id": 5
+    },
+    {
+      "namevalue": "qwrgiqgri",
+      "registernovalue": "1913058",
+      "emailvalue": "FYUGUIEWF@gmail.COM",
+      "mobilevalue": "9876543434",
+      "passwordvalue": "Nandhu@1",
+      "confirmpasswordvalue": "Nandhu@1",
+      "department": "ECE",
+      "year": "1",
+      "id": 6
+    }
+  ]
+}

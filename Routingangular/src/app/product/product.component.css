@@ -1,0 +1,16 @@
+.products{
+  display: flex;
+  margin-left: 10%;
+}
+.img img{
+  margin-top: 15%;
+  width: 350px;
+}
+.description{
+   margin-top: 2.3%;
+   margin-left: 5% ;
+}
+#title{
+  color: blue;
+  font-size: 30px;
+}

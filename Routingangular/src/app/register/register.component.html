@@ -1,0 +1,37 @@
+<!-- <p>
+  register works!
+</p> -->
+<div>
+  <form #registerform="ngForm" (submit)="submitform()">
+    {{registerform.value|json}}
+<div class="form">
+<label>UserName</label>
+<input type="text" name="username" #uname="ngModel" [(ngModel)]= "username" required minlength="4"/>
+</div>
+<div *ngIf="uname.errors && (uname.dirty||uname.touched)" >
+  <div [hidden]="!uname.errors['required']">Please enter username</div>
+
+  <div [hidden]="!uname.errors['minlength']">Please enter username with atleast 3 characters</div>
+</div>
+touched:{{uname.touched}}<br>
+untouched:{{uname.untouched}}<br>
+valid:{{uname.valid}}<br>
+invalid:{{uname.invalid}}<br>
+pristine:{{uname.pristine}}
+dirty:{{uname.dirty}}<br>
+
+<div class="form">
+  <label>Mobilenumber</label>
+  <input type="text" name="mobilenumber" #mobileno="ngModel"[(ngModel)]="mobilenum" required minlength="10"/>
+</div>
+<div *ngIf="mobileno.errors && (mobileno.dirty||mobileno.touched)">
+<div [hidden]="!mobileno.errors['required']"> please enter your mobilenumber</div>
+<div [hidden]="!mobileno.errors['minlength']"> please enter a valid phone number</div>
+</div>
+<div class="form">
+  <label>EmailId</label>
+  <input type="text" name="email" [(ngModel)]="email"/>
+</div>
+<button [disabled]="!registerform.form.valid">Submit</button>
+</form>
+</div>

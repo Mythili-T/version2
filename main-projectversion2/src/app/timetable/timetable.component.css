@@ -1,0 +1,47 @@
+body {
+  background-color: #97aca393;
+}
+
+/* h1 {
+  text-align: center;
+  font-size: 40px;
+  color: rgb(16, 22, 133);
+} */
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+  color: #055615;
+}
+
+h3,a {
+  text-align: center;
+  font-size: 28px;
+  color: #055615;
+}
+
+table,
+td,
+tr,
+th {
+  border: 2px solid green;
+  border-collapse: collapse;
+  padding: 6px;
+}
+
+table {
+  width: 75%;
+}
+
+.table {
+  display: flex;
+  justify-content: center;
+}
+
+tr {
+  text-align: center;
+}
+
+th {
+  background: rgba(22, 114, 43, 0.405);
+}

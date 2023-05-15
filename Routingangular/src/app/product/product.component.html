@@ -1,0 +1,16 @@
+<!-- {{products|json}} -->
+  <div class="products" *ngFor="let product of products">
+    <div class="img">
+      <img [src]="product.thumbnail">
+    </div>
+    <div class="description">
+      <a routerLink="/Product/{{product.title}}"><h1>{{product.title}}</h1></a>
+      <p class="title"> {{product.rating}} &#9733;</p>
+      <span>Brand: </span>  {{product.brand}} <br>
+      <span>Stock: </span> {{product.stock}} <br>
+      <span>Description:</span> {{product.description}} <br>
+    </div>
+  </div>
+<!-- <router-outlet></router-outlet> -->
+<router-outlet></router-outlet>
+<p>product works</p>

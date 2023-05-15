@@ -1,0 +1,26 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+nav{
+border:1px;
+background-color: gray;
+align-items: center;
+height:30px;
+margin-top:50px;
+padding: 20px;
+}
+nav a {
+
+   align-content: space-around;
+    padding-left: 120px;
+    text-decoration: none;
+    margin-top:20px;
+    margin-left: 100px;
+   /* display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center; */
+
+
+}
