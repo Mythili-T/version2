@@ -86,6 +86,8 @@ import { EceLabComponent } from './lab/ece-lab/ece-lab.component';
 import { EeeLabComponent } from './lab/eee-lab/eee-lab.component';
 import { ItLabComponent } from './lab/It-lab/It-lab.component';
 import { LabdepartmentComponent } from './lab/labdepartment/labdepartment.component';
+import { AuthenticationService } from './authentication.service';
+import { AuthGuard } from './auth.guard';
 
 @NgModule({
   declarations: [
@@ -182,7 +184,7 @@ import { LabdepartmentComponent } from './lab/labdepartment/labdepartment.compon
     AppRoutingModule,FormsModule,
     ReactiveFormsModule,HttpClientModule,
   ],
-  providers: [SMMSGuard,MaterialGuard],
+  providers: [SMMSGuard,MaterialGuard,AuthGuard,AuthenticationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

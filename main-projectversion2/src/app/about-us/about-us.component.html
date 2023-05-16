@@ -32,11 +32,12 @@
       <li>
         <a routerLink="/contact-us"><i class="fa-solid fa-phone"></i>Contact</a>
       </li>
-      <li>
-        <a routerLink="/login"
-          ><i class="fa-solid fa-right-from-bracket"></i>Login</a
-        >
-      </li>
+      <div class="subnav" id="logout" style="cursor: pointer;margin-top: 10px;margin-top: 31px; margin-left: 28px;" >
+        <a *ngIf="userlogin" (click)="logout()" style="text-decoration: none; color: white"><i class="fa-solid fa-right-from-bracket"></i>Logout</a>
+      </div>
+      <div class="subnav" id="logout" style="cursor: pointer;margin-top: 35px; margin-left: 28px; ">
+        <a routerLink="/login"  *ngIf="!userlogin" style="text-decoration: none; color: white"><i class="fa-solid fa-right-from-bracket"></i>Login</a>
+        </div>
     </ul>
   </nav>
 </header>

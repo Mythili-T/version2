@@ -84,6 +84,7 @@ import { EceLabComponent } from './lab/ece-lab/ece-lab.component';
 import { EeeLabComponent } from './lab/eee-lab/eee-lab.component';
 import { ItLabComponent } from './lab/It-lab/It-lab.component';
 import { LabdepartmentComponent } from './lab/labdepartment/labdepartment.component';
+import { AuthGuard } from './auth.guard';
 
 
 
@@ -108,7 +109,7 @@ const routes: Routes = [
   {
     path: "contact-us",
     component: ContactUsComponent,
-    canActivate:[SMMSGuard]
+    canActivate:[AuthGuard]
   },
   {
     path: "forgot-password",
@@ -186,7 +187,7 @@ const routes: Routes = [
   {
     path:"timetable",
   component:TimetableComponent,
-  canActivate:[SMMSGuard]
+  canActivate:[AuthGuard]
   },
   {
     path:"questionpaper",
@@ -216,12 +217,12 @@ const routes: Routes = [
   {
     path:"labdepartment",
     component:LabdepartmentComponent,
-    canActivate:[SMMSGuard]
+    canActivate:[AuthGuard]
   },
   {
     path:"department",
     component:DepartmentComponent,
-    canActivate:[SMMSGuard],
+    canActivate:[AuthGuard],
   },
   {
   path:"CSE",

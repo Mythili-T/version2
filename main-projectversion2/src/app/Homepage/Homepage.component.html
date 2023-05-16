@@ -14,8 +14,14 @@
         </div></li>
 
       <li><a  routerLink="/contact-us"><i class="fa-solid fa-phone"></i>Contact</a></li>
-      <li><a routerLink="/login" *ngIf="!userlogin"><i class="fa-solid fa-right-from-bracket"></i>Login</a></li>
-      <li style="margin-right: 100px;"><a *ngIf="userlogin" (click)="logout()"><i class="fa-solid fa-right-from-bracket"></i>Logut</a></li>
+      <!-- <li><a routerLink="/login" *ngIf="!userlogin"><i class="fa-solid fa-right-from-bracket"></i>Login</a></li>
+      <li id="logoutstyle"><a id="logoutstyle" *ngIf="userlogin" (click)="logout()"><i class="fa-solid fa-right-from-bracket"></i>Logout</a></li> -->
+      <div class="subnav" id="logout" style="cursor: pointer;margin-top: 10px;margin-top: 35px; margin-left: 28px;" >
+        <a *ngIf="userlogin" (click)="logout()" style="text-decoration: none; color: black;"><i class="fa-solid fa-right-from-bracket"></i>Logout</a>
+      </div>
+      <div class="subnav" id="logout" style="cursor: pointer;margin-top: 35px; margin-left: 28px; ">
+        <a routerLink="/login"  *ngIf="!userlogin" style="text-decoration: none; color: black;"><i class="fa-solid fa-right-from-bracket"></i>Login</a>
+        </div>
 
     </ul>
   </nav>
@@ -30,7 +36,7 @@
   </div>
   <!-- <img id="logoimage" src="../Static/images/My project.png" onmouseover="logobig(this)" onmouseout="logosmall(this)"
       alt="image" width="70px" height="70px"><br><br><br> -->
-  <h1 ><br>BUILD EDUCATION<br>&nbsp;&nbsp;WEBSITE USING<br>&nbsp;&nbsp;&nbsp;</h1>
+  <h1 ><br><br>BUILD EDUCATION<br>&nbsp;&nbsp;WEBSITE USING<br>&nbsp;&nbsp;&nbsp;</h1>
 <div class="span">
   <span >Studyard</span>
 
@@ -45,7 +51,7 @@
 </div><!-- body of the page ends -->
 
 <!-- student admin teacher section starts -->
-<!-- <div class="break"></div><br><br><br></div> --><br><br><br><br><br><br><br><br><br><br><br>
+<!-- <div class="break"></div><br><br><br></div> --><br><br><br><br><br><br><br>
 <p class="quotes"><b>" <i class="fa-solid fa-users"></i>We can able to Learn together even when we are apart !!..."</b></p><br><br>
 <div class="home-container">
   <div class="teacher">

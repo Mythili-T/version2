@@ -5,6 +5,7 @@ import { Router } from '@angular/router';
 import { RegisterService } from '../register.service';
 import { GuardService } from '../guard.service';
 import { ActivatedRoute } from '@angular/router';
+import { AuthenticationService } from '../authentication.service';
 
 @Component({
   selector: 'app-loginpage',
@@ -15,9 +16,9 @@ export class LoginpageComponent implements OnInit {
   username:any="";
   password:any="";
   retUrl:any="";
-  
+
   constructor(private fb:FormBuilder,private http:HttpClient,private login:RegisterService,private route:Router,
-    private logservice:GuardService,private router:ActivatedRoute) { }
+    private logservice:GuardService,private router:ActivatedRoute,private authenticationService:AuthenticationService) { }
 
   ngOnInit() {
 
@@ -38,7 +39,8 @@ submitLoginForm(){
     const user=res.find((a:any)=>a.namevalue===this.loginForm.value.namevalue && a.passwordvalue===this.loginForm.value.passwordvalue);
     if(user){
       alert("Login successfully");
-      sessionStorage.setItem('UserLogin','true');
+      sessionStorage.setItem('usersuccess','true');
+        this.authenticationService.userlogin=true;
       this.route.navigate(['/home'])
     }
     else{
