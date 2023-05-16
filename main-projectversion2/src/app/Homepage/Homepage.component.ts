@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { AuthenticationService } from '../authentication.service';
 
 @Component({
   selector: 'app-Homepage',
@@ -7,17 +8,24 @@ import { Router } from '@angular/router';
   styleUrls: ['./Homepage.component.css']
 })
 export class HomepageComponent implements OnInit {
-  userlogin:any;
-  constructor(private route:Router) { }
+ // loginForms: any;
+  // userlogin:any;
+  usersuccess=false;
+  constructor(private route:Router,private authenticationService:AuthenticationService) {
+    this.usersuccess=Boolean(sessionStorage.getItem("usersuccess"))||this.authenticationService.userlogin
+   }
 
   ngOnInit() {
-    this.userlogin=sessionStorage.getItem('UserLogin');
+
   }
-  
+
   logout(){
+    this.authenticationService.userlogin=false;
+    this.usersuccess=false;
     sessionStorage.clear();
-    this.userlogin=false;
-    this.route.navigate(['home']);
-  }
+
+    this.route.navigate(['Home']);
+
+  }
 
 }

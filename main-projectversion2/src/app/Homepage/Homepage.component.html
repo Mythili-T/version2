@@ -17,10 +17,10 @@
       <!-- <li><a routerLink="/login" *ngIf="!userlogin"><i class="fa-solid fa-right-from-bracket"></i>Login</a></li>
       <li id="logoutstyle"><a id="logoutstyle" *ngIf="userlogin" (click)="logout()"><i class="fa-solid fa-right-from-bracket"></i>Logout</a></li> -->
       <div class="subnav" id="logout" style="cursor: pointer;margin-top: 10px;margin-top: 35px; margin-left: 28px;" >
-        <a *ngIf="userlogin" (click)="logout()" style="text-decoration: none; color: black;"><i class="fa-solid fa-right-from-bracket"></i>Logout</a>
+        <a *ngIf="usersuccess" (click)="logout()" style="text-decoration: none; color: black;"><i class="fa-solid fa-right-from-bracket"></i>Logout</a>
       </div>
       <div class="subnav" id="logout" style="cursor: pointer;margin-top: 35px; margin-left: 28px; ">
-        <a routerLink="/login"  *ngIf="!userlogin" style="text-decoration: none; color: black;"><i class="fa-solid fa-right-from-bracket"></i>Login</a>
+        <a routerLink="/login"  *ngIf="!usersuccess" style="text-decoration: none; color: black;"><i class="fa-solid fa-right-from-bracket"></i>Login</a>
         </div>
 
     </ul>

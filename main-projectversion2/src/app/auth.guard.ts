@@ -14,7 +14,7 @@ export class AuthGuard implements CanActivate {
         return true;
       }
       else{
-        window.alert('You are not logged in to view page');
+        window.alert('Please Login to view the page ');
         this.route.navigate(['login']);
         return false;
       }

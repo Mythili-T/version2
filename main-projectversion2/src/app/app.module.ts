@@ -88,9 +88,10 @@ import { ItLabComponent } from './lab/It-lab/It-lab.component';
 import { LabdepartmentComponent } from './lab/labdepartment/labdepartment.component';
 import { AuthenticationService } from './authentication.service';
 import { AuthGuard } from './auth.guard';
+import { HomelogoutComponent } from './homelogout/homelogout.component';
 
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
     HomepageComponent,
     LoginpageComponent,
@@ -176,9 +177,9 @@ import { AuthGuard } from './auth.guard';
     EceLabComponent,
     EeeLabComponent,
     ItLabComponent,
-    LabdepartmentComponent
-
-  ],
+    LabdepartmentComponent,
+      HomelogoutComponent
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule,FormsModule,
