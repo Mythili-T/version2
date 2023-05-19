@@ -88,10 +88,12 @@ import { ItLabComponent } from './lab/It-lab/It-lab.component';
 import { LabdepartmentComponent } from './lab/labdepartment/labdepartment.component';
 import { AuthenticationService } from './authentication.service';
 import { AuthGuard } from './auth.guard';
-import { HomelogoutComponent } from './homelogout/homelogout.component';
+import { FooterComponent } from './footer/footer.component';
+import { AdminhomepageComponent } from './admin/adminhomepage/adminhomepage.component';
+import { IndexpageComponent } from './indexpage/indexpage.component';
 
 @NgModule({
-  declarations: [	
+  declarations: [
     AppComponent,
     HomepageComponent,
     LoginpageComponent,
@@ -178,7 +180,9 @@ import { HomelogoutComponent } from './homelogout/homelogout.component';
     EeeLabComponent,
     ItLabComponent,
     LabdepartmentComponent,
-      HomelogoutComponent
+      FooterComponent,
+      AdminhomepageComponent,
+      IndexpageComponent,
    ],
   imports: [
     BrowserModule,

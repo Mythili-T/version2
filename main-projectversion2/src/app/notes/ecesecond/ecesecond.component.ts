@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FooterComponent } from 'src/app/footer/footer.component';
+
 
 @Component({
   selector: 'app-ecesecond',

@@ -85,6 +85,7 @@ import { EeeLabComponent } from './lab/eee-lab/eee-lab.component';
 import { ItLabComponent } from './lab/It-lab/It-lab.component';
 import { LabdepartmentComponent } from './lab/labdepartment/labdepartment.component';
 import { AuthGuard } from './auth.guard';
+import { IndexpageComponent } from './indexpage/indexpage.component';
 
 
 
@@ -104,7 +105,8 @@ const routes: Routes = [
   },
   {
     path: "about-us",
-    component: AboutUsComponent
+    component: AboutUsComponent,
+    canActivate:[AuthGuard]
   },
   {
     path: "contact-us",
@@ -425,9 +427,14 @@ const routes: Routes = [
   component:ITfinalsyblComponent
 },
 {
+  path:"indexpage",
+  component:IndexpageComponent
+},
+{
   path: "",
   component: HomepageComponent
-},
+}
+
 
 
 ];

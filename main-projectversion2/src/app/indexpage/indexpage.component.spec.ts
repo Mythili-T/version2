@@ -3,21 +3,21 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { HomelogoutComponent } from './homelogout.component';
+import { IndexpageComponent } from './indexpage.component';
 
-describe('HomelogoutComponent', () => {
-  let component: HomelogoutComponent;
-  let fixture: ComponentFixture<HomelogoutComponent>;
+describe('IndexpageComponent', () => {
+  let component: IndexpageComponent;
+  let fixture: ComponentFixture<IndexpageComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HomelogoutComponent ]
+      declarations: [ IndexpageComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HomelogoutComponent);
+    fixture = TestBed.createComponent(IndexpageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

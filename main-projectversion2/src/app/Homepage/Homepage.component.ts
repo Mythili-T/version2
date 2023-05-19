@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AuthenticationService } from '../authentication.service';
+import { FooterComponent } from '../footer/footer.component';
+
+
 
 @Component({
   selector: 'app-Homepage',
